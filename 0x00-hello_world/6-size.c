@@ -11,10 +11,10 @@ int num:
 long int num2:
 long long int num3:
 float flo:
-printf("Size of a char: %zu byte(s)\n", sizeof(str))
-printf("Size of a int: %zu byte(s)\n", sizeof(num))
-printf("Size of a long int: %zu byte(s)\n", sizeof(num2))
-printf("Size of long long int: %zu byte(s)\n", sizeof(num3))
-printf("Size of float: %zu byte(s)\n", sizeof(flo))
+printf("Size of a char: %zu byte(s)\n", sizeof(str));
+printf("Size of an int: %zu byte(s)\n", sizeof(num));
+printf("Size of a long int: %zu byte(s)\n", sizeof(numb2));
+printf("Size of a long long int: %zu byte(s)\n", sizeof(num3));
+printf("Size of a float: %zu byte(s)\n", sizeof(flo));
 return (0);
 }
