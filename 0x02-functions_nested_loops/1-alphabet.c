@@ -1,11 +1,11 @@
-#include "main.c"
+#include "print_alphabet_x10.h"
 
 /**
  * print_alphabet - Check description
  * Description: It prints the alphabet in lowercase fallowed by a new line
- * Return: Nothing.
+ * Return: Always 0.
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char i;
 
