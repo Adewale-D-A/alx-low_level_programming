@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,12 +7,9 @@
  */
 int main(void)
 {
-	char word[9] = "Holberton";
-	int i;
+char word[9] = "_putchar";
+_putchar(word\n);
+_putchar('\n');
 
-	for (i = 0; i < 9; i++)
-		_putchar(word[i]);
-	_putchar('\n');
-
-	return (0);
+return (0);
 }
