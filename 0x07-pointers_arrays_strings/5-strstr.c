@@ -26,17 +26,21 @@ int _strncmp(char *s1, char *s2, unsigned int b)
  */
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int len;
-	/*Get length of needle for strncmp*/
-	len = 0;
-	while (needle[len] != '\0')
-		len++;
-	/*compare substring*/
-	while (*haystack != '\0')
+	char *startn = needle, *starth = haystack;
+
+	while (*haystack)
 	{
-		if (_strncmp(haystack, needle, len) == 0)
+		starth = haystack;
+		needle = startn;
+		while (*haystack == *needle)
+		{
+			haystack++;
+			needle++;
+		}
+
+		if (*needle == '\0')
 			return (haystack);
-		haystack++;
+		haystack = starth + 1;
 	}
 	return (NULL);
 }
