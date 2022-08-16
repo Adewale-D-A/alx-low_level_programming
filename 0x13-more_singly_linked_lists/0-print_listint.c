@@ -1,13 +1,20 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
- * recursion_printer - A function that prints all the elements in the list
- * @h: A pointer to listint structure
- * Return: the number of nodes.
+ * print_listint - prints all the elements of a list.
+ * @h: head of a list.
+ *
+ * Return: numbers of nodes.
  */
-size_t recursion_printer(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
-	printf("%d\n", h->n);
-	return (1 + recursion_printer(h->next));
+	size_t nnodes = 0;
+
+	while (h != NULL)
+	{
+		printf("%d\n", h->n);
+		h = h->next;
+		nnodes++;
+	}
+	return (nnodes);
 }
